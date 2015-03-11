@@ -11,7 +11,7 @@ class Bubble_AdminTheme_Adminhtml_ThemeController extends Mage_Adminhtml_Control
     {
         $theme = $this->getRequest()->getParam('theme');
         if ($theme) {
-            Mage::getConfig()->saveConfig('bubble_admintheme/config/theme', $theme);
+            Mage::getConfig()->saveConfig('admin/theme/theme', $theme);
             Mage::app()->getCacheInstance()->cleanType('config');
         }
         $this->_redirectReferer();

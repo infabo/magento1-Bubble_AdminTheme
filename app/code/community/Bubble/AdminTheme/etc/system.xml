@@ -1,21 +1,9 @@
 <?xml version="1.0"?>
 <config>
-    <tabs>
-        <bubble translate="label">
-            <label>Bubble Extensions</label>
-            <sort_order>1000</sort_order>
-        </bubble>
-    </tabs>
     <sections>
-        <bubble_admintheme translate="label" module="bubble_admintheme">
-            <label>Admin Theme</label>
-            <tab>bubble</tab>
-            <sort_order>1000</sort_order>
-            <show_in_default>1</show_in_default>
-            <show_in_website>1</show_in_website>
-            <show_in_store>1</show_in_store>
+        <admin>
             <groups>
-                <config translate="label">
+                <theme translate="label">
                     <label>Admin Theme Settings</label>
                     <sort_order>10</sort_order>
                     <show_in_default>1</show_in_default>
@@ -31,9 +19,18 @@
                             <show_in_website>0</show_in_website>
                             <show_in_store>0</show_in_store>
                         </theme>
+                        <allow_user_switching>
+                            <label>Allow user switching</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>20</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>0</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </allow_user_switching>
                     </fields>
-                </config>
+                </theme>
             </groups>
-        </bubble_admintheme>
+        </admin>
     </sections>
 </config>

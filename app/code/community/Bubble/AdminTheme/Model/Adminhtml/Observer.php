@@ -9,7 +9,7 @@ class Bubble_AdminTheme_Model_Adminhtml_Observer
 {
     public function setTheme()
     {
-        $theme = Mage::getStoreConfig('bubble_admintheme/config/theme');
+        $theme = Mage::getStoreConfig('admin/theme/theme');
         Mage::getDesign()->setTheme($theme);
         foreach (array('layout', 'template', 'skin', 'locale') as $type) {
             Mage::getDesign()->setTheme($type, $theme);

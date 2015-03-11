@@ -12,7 +12,7 @@ class Bubble_AdminTheme_Block_Adminhtml_Themes_Select extends Mage_Adminhtml_Blo
         $this->setName('theme')
             ->setId('interface_theme')
             ->setTitle($this->helper('bubble_admintheme')->__('Current Admin Theme'))
-            ->setValue(Mage::getStoreConfig('bubble_admintheme/config/theme'))
+            ->setValue(Mage::getStoreConfig('admin/theme/theme'))
             ->setOptions($this->_getSelectOptions());
     }
 

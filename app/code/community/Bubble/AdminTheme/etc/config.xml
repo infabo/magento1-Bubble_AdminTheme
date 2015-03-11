@@ -85,10 +85,11 @@
         </themes>
     </adminhtml>
     <default>
-        <bubble_admintheme>
-            <config>
+        <admin>
+            <theme>
                 <theme>magento2</theme>
-            </config>
-        </bubble_admintheme>
+                <allow_user_switching>1</allow_user_switching>
+            </theme>
+        </admin>
     </default>
 </config>
