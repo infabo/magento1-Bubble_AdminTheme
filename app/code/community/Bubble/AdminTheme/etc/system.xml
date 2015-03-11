@@ -9,6 +9,9 @@
                     <show_in_default>1</show_in_default>
                     <show_in_website>0</show_in_website>
                     <show_in_store>0</show_in_store>
+                    <comment><![CDATA[
+                        <div class="box" style="background-color: #fff">Theme created by <a href="https://twitter.com/johannreinke" target="_blank" title="Follow me on Twitter">Johann Reinke</a> for <a href="https://www.bubbleshop.net" target="_blank" title="BubbleShop by Johann Reinke">BubbleShop</a></div>
+                    ]]></comment>
                     <fields>
                         <theme translate="label">
                             <label>Current Admin Theme</label>

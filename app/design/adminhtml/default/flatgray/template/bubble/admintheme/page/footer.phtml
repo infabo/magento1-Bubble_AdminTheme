@@ -28,14 +28,15 @@
 <div class="bug-report">
     <p><a href="<?php echo $this->getBugreportUrl() ?>" id="footer_bug_tracking"><?php echo $this->__('Help Us Keep Magento Healthy - Report All Bugs') ?></a></p>
     <p><?php echo $this->__('Interface Locale: %s', $this->getLanguageSelect()) ?></p>
+    <?php if (Mage::getStoreConfigFlag('admin/theme/allow_user_switching')): ?>
     <p><?php echo $this->helper('bubble_admintheme')->__('Current Theme:'); ?>&nbsp;<?php echo $this->getLayout()->createBlock('bubble_admintheme/adminhtml_themes_select')->getHtml(); ?></p>
+    <?php endif; ?>
 </div>
 <div class="legality">
     <p><a href="http://www.magentocommerce.com" id="footer_connect"><?php echo $this->__('Connect with the Magento Community') ?></a></p>
     <p><?php echo $this->__('Magento&trade; is a trademark of Magento Inc.<br/>Copyright &copy; %s Magento Inc.', date('Y')) ?></p>
 </div>
 <p><?php echo $this->__('Magento ver. %s', Mage::getVersion()) ?></p>
-<p><?php echo $this->__('Theme created by <a href="https://twitter.com/johannreinke" target="_blank" title="Follow me on Twitter">Johann Reinke</a> for <a href="https://www.bubbleshop.net" target="_blank" title="BubbleShop by Johann Reinke">BubbleShop</a>') ?></p>
 <script type="text/javascript">
     $('footer_bug_tracking').target = 'Varien_External';
     $('footer_connect').target = 'Varien_External';
