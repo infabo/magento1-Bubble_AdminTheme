@@ -50,6 +50,7 @@
     }
     Event.observe('interface_locale', 'change', setInterfaceLanguage);
 
+    <?php if (Mage::getStoreConfigFlag('admin/theme/allow_user_switching')): ?>
     // Bubble_AdminTheme
     function setInterfaceTheme(evt){
         var elem = Event.element(evt);
@@ -58,5 +59,6 @@
         }
     }
     Event.observe('interface_theme', 'change', setInterfaceTheme);
+    <?php endif; ?>
 </script>
 </div>
