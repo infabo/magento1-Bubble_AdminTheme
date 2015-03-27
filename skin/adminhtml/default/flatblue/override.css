@@ -38,7 +38,7 @@ small {
     padding-left: 15px;
     padding-right: 15px;
     min-width: 960px;
-    max-width: 1600px;
+    /*max-width: 1600px;*/
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     -ms-box-sizing: border-box;
