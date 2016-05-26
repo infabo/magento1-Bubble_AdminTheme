@@ -552,7 +552,7 @@ ul.tabs-horiz li a {
 }
 ul.tabs-horiz li a.active {
   border: 0;
-  background: #777;
+  background: #555555;
   color: #fff !important;
 }
 ul.config-tabs dt {
@@ -588,7 +588,7 @@ ul.tabs a:hover {
   transition: background 0.3s ease-in-out;
 }
 ul.tabs a.active {
-  border-left: 3px solid #777;
+  border-left: 3px solid #555555;
   padding: 8px 18px;
   background: #eee;
   box-shadow: 0 1px 2px #ccc inset;
@@ -611,7 +611,7 @@ ul.tabs a:hover.active span {
 }
 ul.config-tabs dt {
   border-top: 0;
-  background: #777;
+  background: #555555;
   color: #fff;
 }
 .grid table {
@@ -655,14 +655,14 @@ ul.config-tabs dt {
   background: #f0f9ff;
 }
 .grid tr.headings {
-  background: #777;
-  border: 1px solid #777;
+  background: #555555;
+  border: 1px solid #555555;
 }
 .grid tr.headings th {
   padding: 4px;
   font-size: 12px;
   vertical-align: middle;
-  border: 1px solid #777;
+  border: 1px solid #555555;
 }
 .grid tr.headings th,
 .grid tr.headings th a {
@@ -682,7 +682,7 @@ ul.config-tabs dt {
 }
 .grid tr.headings th a.sort-arrow-desc,
 .grid tr.headings th a.sort-arrow-asc {
-  background: #555;
+  background: #3b3b3b;
   border: 0;
   box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
   box-sizing: border-box;
@@ -743,13 +743,12 @@ table.actions td {
   padding-left: 15px;
   padding-right: 15px;
   min-width: 960px;
-  /*max-width: 1600px;*/
   -ms-box-sizing: border-box;
   box-sizing: border-box;
   width: 100%;
 }
 .header {
-  background: #272930;
+  background: #3b3b3b;
 }
 .header-top {
   border: 0;
@@ -810,38 +809,36 @@ table.actions td {
   position: static;
   width: auto;
 }
-.nav-bar {
-  background: #555;
+.header .nav-bar {
+  background: #555555;
   padding: 0 30px;
+  border: 0;
 }
-/************** ALL LEVELS  *************/
-/* Style consistent throughout all nav levels */
-#nav li {
+.header .nav-bar #nav li {
   position: relative;
   text-align: left;
 }
-#nav li.over {
+.header .nav-bar #nav li.over {
   z-index: 99;
 }
-#nav li.active {
+.header .nav-bar #nav li.active {
   z-index: 100;
 }
-/* to prevent the li separator from showing through on mouseover on li */
-#nav a,
-#nav a:hover {
+.header .nav-bar #nav a,
+.header .nav-bar #nav a:hover {
   display: block;
   text-decoration: none;
 }
-/************ 1ST LEVEL  ***************/
-#nav li {
+.header .nav-bar #nav li {
   float: left;
+  background: none;
 }
-#nav li.active {
+.header .nav-bar #nav li.active {
   margin-left: -1px;
-  color: #fff;
+  color: #ffffff;
   font-weight: bold;
 }
-#nav li.active em {
+.header .nav-bar #nav li.active em {
   display: block;
   position: absolute;
   top: 0;
@@ -849,16 +846,16 @@ table.actions td {
   width: 3px;
   height: 27px;
 }
-#nav a {
+.header .nav-bar #nav a {
   float: left;
   padding: 0 12px;
-  color: #fff;
+  color: #ffffff;
   cursor: pointer;
 }
-#nav li.over a {
-  color: #d6e2e5;
+.header .nav-bar #nav li.over a {
+  color: #e6e6e6;
 }
-#nav li.level0 li.parent > a:after {
+.header .nav-bar #nav li.level0 li.parent > a:after {
   content: "";
   position: absolute;
   right: 12px;
@@ -869,122 +866,120 @@ table.actions td {
   border-width: 5px 0 5px 6px;
   border-color: transparent transparent transparent #cccccc;
 }
-/************ 1ST LEVEL RESET ************/
-#nav ul li,
-#nav ul li.active {
+.header .nav-bar #nav ul li,
+.header .nav-bar #nav ul li.active {
   float: none;
   height: auto;
   background: none;
   margin: 0;
 }
-#nav ul a,
-#nav ul a:hover {
+.header .nav-bar #nav ul a,
+.header .nav-bar #nav ul a:hover {
   float: none;
   line-height: 1.3em;
 }
-#nav ul li.over a,
-#nav ul li.over a:hover,
-#nav ul a,
-#nav li.active li {
+.header .nav-bar #nav ul li.over a,
+.header .nav-bar #nav ul li.over a:hover,
+.header .nav-bar #nav ul a,
+.header .nav-bar #nav li.active li {
   font-weight: normal;
 }
-#nav li.level0 > a {
+.header .nav-bar #nav li.level0 > a {
   text-transform: none;
   font-weight: 400;
-  color: #fff;
+  color: #ffffff;
   height: 38px;
   line-height: 38px;
 }
-#nav .level0 > a:after {
+.header .nav-bar #nav .level0 > a:after {
   content: "";
   display: block;
   margin-top: 10px;
   height: 3px;
   font-size: 0;
 }
-#nav .level0.active > a {
+.header .nav-bar #nav .level0.active > a {
   font-weight: 600;
-  background: #777;
+  background: rgba(255, 255, 255, 0.2);
 }
-#nav li.level0.over > a,
-#nav li.level0 > a:hover {
-  background: #777;
-  color: #fff;
+.header .nav-bar #nav li.level0.over > a,
+.header .nav-bar #nav li.level0 > a:hover {
+  background: #555555;
+  color: #ffffff;
 }
-/************ 2ND LEVEL ************/
-#nav ul {
+.header .nav-bar #nav ul {
   position: absolute;
   width: 189px;
   top: 38px;
   left: -10000px;
   box-shadow: rgba(0, 0, 0, 0.180392) 1px 3px 4px;
+  border-top: 0;
 }
-#nav ul ul {
+.header .nav-bar #nav ul span {
+  background: none;
+}
+.header .nav-bar #nav ul ul {
   border-top: 0;
   padding-top: 2px;
   left: 100px;
   top: 13px;
 }
-/* Show menu */
-#nav li.over ul {
+.header .nav-bar #nav li.over ul {
   left: 0;
 }
-#nav li.over ul ul {
+.header .nav-bar #nav li.over ul ul {
   left: -10000px;
 }
-#nav li.over ul li.over ul {
+.header .nav-bar #nav li.over ul li.over ul {
   left: 100px;
 }
-#nav ul li {
+.header .nav-bar #nav ul li {
   padding: 0;
 }
-#nav ul li a {
-  background: #fff;
-  color: #555;
-  padding: 6px 12px;
+.header .nav-bar #nav ul li a {
+  background: #ffffff;
+  color: #555555;
+  padding: 0;
 }
-#nav li.over ul a,
-#nav ul li.active a,
-#nav ul li a {
-  color: #555;
+.header .nav-bar #nav li.over ul a,
+.header .nav-bar #nav ul li.active a,
+.header .nav-bar #nav ul li a {
+  color: #555555;
   font-size: 12px;
 }
-#nav ul li a:hover {
-  background: #555;
-  color: #fff;
+.header .nav-bar #nav ul li a:hover {
+  background: #555555;
+  color: #ffffff;
 }
-#nav ul li.parent a,
-#nav ul li.parent li.parent a {
+.header .nav-bar #nav ul li.parent a,
+.header .nav-bar #nav ul li.parent li.parent a {
   background-position: 100% 100%;
   background-repeat: no-repeat;
 }
-#nav ul li.parent li a,
-#nav ul li.parent li.parent li a {
+.header .nav-bar #nav ul li.parent li a,
+.header .nav-bar #nav ul li.parent li.parent li a {
   background-image: none;
 }
-/************ 3RD+ LEVEL ************/
-/* Cursors */
-#nav li.parent a,
-#nav li.parent li.parent a,
-#nav li.parent li.parent li.parent a {
+.header .nav-bar #nav li.parent a,
+.header .nav-bar #nav li.parent li.parent a,
+.header .nav-bar #nav li.parent li.parent li.parent a {
   cursor: default;
 }
-#nav li.parent li a,
-#nav li.parent li.parent li a,
-#nav li.parent li.parent li.parent li a {
+.header .nav-bar #nav li.parent li a,
+.header .nav-bar #nav li.parent li.parent li a,
+.header .nav-bar #nav li.parent li.parent li.parent li a {
   cursor: pointer;
 }
-/* Show menu */
-#nav ul ul ul {
+.header .nav-bar #nav ul ul ul {
   left: -10000px;
 }
-#nav li.over ul li.over ul ul {
+.header .nav-bar #nav li.over ul li.over ul ul {
   left: -10000px;
 }
-#nav li.over ul li.over ul li.over ul {
+.header .nav-bar #nav li.over ul li.over ul li.over ul {
   left: 100px;
 }
-.nav-bar:after {
+.header .nav-bar .nav-bar:after {
   content: ".";
   display: block;
   clear: both;
@@ -993,12 +988,12 @@ table.actions td {
   height: 0;
   overflow: hidden;
 }
-#nav li#bubblelauncher-status a {
+.header .nav-bar #nav li#bubblelauncher-status a {
   background-position: center 8px;
   line-height: 38px;
   height: 38px;
 }
-#nav li#bubblelauncher-status.on a {
+.header .nav-bar #nav li#bubblelauncher-status.on a {
   background-position: center -32px;
 }
 body,
@@ -1028,7 +1023,7 @@ a:visited {
 a:focus,
 a:hover,
 a:active {
-  color: #3378a3;
+  color: #1681c4;
   text-decoration: none;
 }
 strong,
