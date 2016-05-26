@@ -25,13 +25,11 @@
         display: inline-block;
         vertical-align: middle;
         max-width: 175px;
+        max-height: 25px;
     }
     .magento-logo {
         height: auto;
         margin: 0;
-        margin-left: 10px;
-        padding-left: 10px;
-        border-left: 1px solid white;
         text-decoration: none;
 
         &:before {
@@ -74,6 +72,11 @@
                 width: auto;
             }
         }
+    }
+    .site-logo + .magento-logo {
+        margin-left: 10px;
+        padding-left: 10px;
+        border-left: 1px solid white;
     }
 }
 

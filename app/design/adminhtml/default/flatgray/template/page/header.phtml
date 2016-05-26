@@ -28,7 +28,9 @@
 ?>
 <div class="header-top">
     <div class="header-logos">
+        <?php if(file_exists(Mage::getSingleton('core/design_package')->getFilename('images/site_logo.png', array('_type' => 'skin', '_default' => false)))): ?>
         <img src="<?php echo $this->getSkinUrl('images/site_logo.png'); ?>" class="site-logo"/>
+        <?php endif; ?>
         <a href="<?php echo $this->getHomeLink() ?>" data-edition="<?php echo Mage::getEdition() ?> Edition" class="magento-logo" title="Magento Admin Panel"><span>Magento Admin Panel</span></a>
     </div>
     <div class="header-right">

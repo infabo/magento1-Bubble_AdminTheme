@@ -761,13 +761,11 @@ table.actions td {
   display: inline-block;
   vertical-align: middle;
   max-width: 175px;
+  max-height: 25px;
 }
 .header-logos .magento-logo {
   height: auto;
   margin: 0;
-  margin-left: 10px;
-  padding-left: 10px;
-  border-left: 1px solid white;
   text-decoration: none;
 }
 .header-logos .magento-logo:before {
@@ -808,6 +806,11 @@ table.actions td {
   overflow: visible;
   position: static;
   width: auto;
+}
+.header-logos .site-logo + .magento-logo {
+  margin-left: 10px;
+  padding-left: 10px;
+  border-left: 1px solid white;
 }
 .header-right {
   font-size: 12px;
