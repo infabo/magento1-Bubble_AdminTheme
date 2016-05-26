@@ -64,30 +64,15 @@
             <default module="bubble_admintheme">
                 <label>Default</label>
             </default>
-            <go module="bubble_admintheme">
-                <label>Magento Go</label>
-            </go>
-            <magento module="bubble_admintheme">
-                <label>Magento.com</label>
-            </magento>
-            <magento2 module="bubble_admintheme">
-                <label>Magento 2</label>
-            </magento2>
             <flatgray module="bubble_admintheme">
                 <label>Flat Gray</label>
             </flatgray>
-            <flatblue module="bubble_admintheme">
-                <label>Flat Blue</label>
-            </flatblue>
-            <flatorange module="bubble_admintheme">
-                <label>Flat Orange</label>
-            </flatorange>
         </themes>
     </adminhtml>
     <default>
         <admin>
             <theme>
-                <theme>magento2</theme>
+                <theme>flatgray</theme>
                 <allow_user_switching>1</allow_user_switching>
             </theme>
         </admin>
