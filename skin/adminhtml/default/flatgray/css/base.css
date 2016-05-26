@@ -753,9 +753,61 @@ table.actions td {
 .header-top {
   border: 0;
 }
-.header-top .logo {
-  margin: 0;
+.header-logos {
+  float: left;
+  padding-top: 5px;
+}
+.header-logos .site-logo {
+  display: inline-block;
+  vertical-align: middle;
+  max-width: 175px;
+}
+.header-logos .magento-logo {
   height: auto;
+  margin: 0;
+  margin-left: 10px;
+  padding-left: 10px;
+  border-left: 1px solid white;
+  text-decoration: none;
+}
+.header-logos .magento-logo:before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  width: 109px;
+  height: 35px;
+  background-image: url('../images/logo.svg');
+  background-size: 109px 70px;
+  background-repeat: no-repeat;
+}
+.header-logos .magento-logo:after {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 10px;
+  content: attr(data-edition);
+  font: 400 16px/1.33 'Open Sans', sans-serif;
+  color: #ef672f;
+  margin-top: -2px;
+}
+.header-logos .magento-logo span {
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+.header-logos .magento-logo span.focusable:active,
+.header-logos .magento-logo span.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
 }
 .header-right {
   font-size: 12px;
