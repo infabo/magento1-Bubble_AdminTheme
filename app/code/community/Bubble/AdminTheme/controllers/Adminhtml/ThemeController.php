@@ -16,4 +16,13 @@ class Bubble_AdminTheme_Adminhtml_ThemeController extends Mage_Adminhtml_Control
         }
         $this->_redirectReferer();
     }
+    /**
+     * add _isAllowed() method override 
+     * @author Pascal Brouwers 
+     * @version 2016-06-03
+     */
+    protected function _isAllowed()
+    {
+        return true;
+    }
 }
