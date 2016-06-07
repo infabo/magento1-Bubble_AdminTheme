@@ -37,7 +37,7 @@
   text-shadow: none;
 }
 .notice-msg {
-  background-image: url(images/icon-notice.png) !important;
+  background-image: url(../images/icon-notice.png) !important;
   background-repeat: no-repeat !important;
   background-size: 23px 23px !important;
   background-color: #f9f5ec !important;
@@ -46,7 +46,7 @@
   color: #555 !important;
 }
 .error-msg {
-  background-image: url(images/icon-error.png) !important;
+  background-image: url(../images/icon-error.png) !important;
   background-repeat: no-repeat !important;
   background-size: 23px 23px !important;
   background-color: #f3dcd8 !important;
@@ -55,7 +55,7 @@
   color: #963535 !important;
 }
 .success-msg {
-  background-image: url(images/icon-success.png) !important;
+  background-image: url(../images/icon-success.png) !important;
   background-repeat: no-repeat !important;
   background-size: 23px 23px !important;
   background-color: #e4eecb !important;
@@ -64,7 +64,7 @@
   color: #185b00 !important;
 }
 .warning-msg {
-  background-image: url(images/icon-notice.png) !important;
+  background-image: url(../images/icon-notice.png) !important;
   background-repeat: no-repeat !important;
   background-size: 23px 23px !important;
   background-color: #fffbf0 !important;
