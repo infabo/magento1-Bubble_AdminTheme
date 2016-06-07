@@ -614,6 +614,27 @@ ul.config-tabs dt {
   background: #555555;
   color: #fff;
 }
+body #system_config_tabs .postnl-tab {
+  background: #fff url(../../default/images/TIG/PostNL/logo_postnl.png) 18px 5px no-repeat !important;
+  display: block;
+  height: 20px;
+}
+body #system_config_tabs .postnl-tab:hover {
+  background-color: #f4f4f4 !important;
+  border-right: none !important;
+}
+body #system_config_tabs .postnl-tab.active {
+  background-color: #eee !important;
+  border-right: none !important;
+}
+body #system_config_tabs .postnl-tab span {
+  padding: 2px 0 0 35px;
+  display: block;
+  height: auto;
+}
+body #system_config_tabs .postnl-tab.active span {
+  background: none;
+}
 .grid table {
   border: 1px solid #ddd;
   border-collapse: collapse;
