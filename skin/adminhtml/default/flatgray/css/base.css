@@ -614,27 +614,6 @@ ul.config-tabs dt {
   background: #555555;
   color: #fff;
 }
-body #system_config_tabs .postnl-tab {
-  background: #fff url(../../default/images/TIG/PostNL/logo_postnl.png) 18px 5px no-repeat !important;
-  display: block;
-  height: 20px;
-}
-body #system_config_tabs .postnl-tab:hover {
-  background-color: #f4f4f4 !important;
-  border-right: none !important;
-}
-body #system_config_tabs .postnl-tab.active {
-  background-color: #eee !important;
-  border-right: none !important;
-}
-body #system_config_tabs .postnl-tab span {
-  padding: 2px 0 0 35px;
-  display: block;
-  height: auto;
-}
-body #system_config_tabs .postnl-tab.active span {
-  background: none;
-}
 .grid table {
   border: 1px solid #ddd;
   border-collapse: collapse;
@@ -1539,4 +1518,72 @@ div.autocomplete ul li.selected {
   margin-top: 30px;
   border-top: 1px solid #ccc;
   font-size: 12px;
+}
+body ul.tabs a.monkey-section:hover {
+  background-color: #f4f4f4;
+  background-image: none;
+}
+body ul.tabs a.monkey-section,
+body ul.tabs a.monkey-section:hover {
+  border-bottom: 1px #eee;
+  border-bottom-style: solid;
+  text-indent: -9999px;
+}
+body ul.tabs a.monkey-section span,
+body ul.tabs a.monkey-section:hover span {
+  background: url(../../default/magemonkey/mailchimp-tab.png) no-repeat;
+  overflow: visible;
+  padding-left: 0;
+  width: auto;
+  height: 20px;
+}
+body ul.tabs a.monkey-section.active,
+body ul.tabs a.monkey-section.active:hover {
+  background: #eee;
+  border-bottom-color: transparent;
+}
+body ul.tabs a.mandrill-section:hover {
+  background-color: #f4f4f4;
+  background-image: none;
+}
+body ul.tabs a.mandrill-section,
+body ul.tabs a.mandrill-section:hover {
+  border-bottom: 1px #eee;
+  border-bottom-style: solid;
+}
+body ul.tabs a.mandrill-section span,
+body ul.tabs a.mandrill-section:hover span {
+  background: url(../../default/ebizmarts/mandrill/mandrill-tab.png) no-repeat;
+  overflow: visible;
+  padding: 0;
+  padding-left: 30px;
+  width: auto;
+  height: 20px;
+  line-height: normal;
+}
+body ul.tabs a.mandrill-section.active,
+body ul.tabs a.mandrill-section.active:hover {
+  background-color: #eee;
+  border-bottom-color: transparent;
+}
+body #system_config_tabs .postnl-tab {
+  background: #fff url(../../default/images/TIG/PostNL/logo_postnl.png) 18px 5px no-repeat !important;
+  display: block;
+  height: 20px;
+}
+body #system_config_tabs .postnl-tab:hover {
+  background-color: #f4f4f4 !important;
+  border-right: none !important;
+}
+body #system_config_tabs .postnl-tab.active {
+  background-color: #eee !important;
+  border-right: none !important;
+}
+body #system_config_tabs .postnl-tab span {
+  padding: 2px 0 0 35px;
+  display: block;
+  height: auto;
+}
+body #system_config_tabs .postnl-tab.active span {
+  background: none;
 }
