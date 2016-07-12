@@ -1519,6 +1519,28 @@ div.autocomplete ul li.selected {
   border-top: 1px solid #ccc;
   font-size: 12px;
 }
+body #system_config_tabs .buckaroo-section {
+  background: #fff url('../../default/images/tabs_span_bg.gif') no-repeat !important;
+  border-bottom: 1px solid #eee !important;
+  height: 23px !important;
+  padding: 6px 6px 3px 18px !important;
+}
+body #system_config_tabs .buckaroo-section:hover {
+  background: #fff url('../../default/images/tabs_span_bg.gif') no-repeat !important;
+  background-color: #f4f4f4 !important;
+  border-bottom: 1px solid #eee !important;
+  height: 23px !important;
+  padding: 6px 6px 3px 18px !important;
+}
+body #system_config_tabs .buckaroo-section span {
+  background: url('../../default/images/tig_buckaroo3extended/buckaroo_small.png') 2px 4px no-repeat !important;
+  overflow: hidden !important;
+  padding: 22px 0 0 !important;
+  height: 0 !important;
+}
+body #system_config_tabs .buckaroo-section.active {
+  background-color: #eee !important;
+}
 body ul.tabs a.monkey-section:hover {
   background-color: #f4f4f4;
   background-image: none;
