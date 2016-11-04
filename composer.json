@@ -1,0 +1,18 @@
+{
+  "name": "newtown/magento-bubble-admin-theme",
+  "license": "GPL-3.0",
+  "type": "magento-module",
+  "description": "Magento Admin Theme",
+  "homepage": "https://www.bubbleshop.net/magento-admin-theme.html",
+  "require": {
+    "php": ">=5.3",
+    "magento-hackathon/magento-composer-installer": "*"
+  },
+  "authors": [
+    {
+      "name": "Ingo Fabbri",
+      "email": "if@newtown.at",
+      "role": "Maintainer"
+    }
+  ]
+}
