@@ -27,4 +27,11 @@
 -->
 <theme>
     <parent>default/default</parent>
+    <layout>
+        <updates>
+            <default_flatgray>
+                <file>default_flatgray.xml</file>
+            </default_flatgray>
+        </updates>
+    </layout>
 </theme>
